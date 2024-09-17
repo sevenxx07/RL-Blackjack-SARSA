@@ -14,7 +14,7 @@ not, the player wins. If neither the player nor the dealer busts, the winner is 
 value of the cards. The player with a higher sum of cards wins. Equal sums mean tie.
 
 # Implementation
-I used the Gymnasium [2] library (formerly Open AI Gym) as an environment for the
+I used the Gymnasium library (formerly Open AI Gym) as an environment for the
 game. You can find the environment implementation in file blackjack.py. File carddeck.py
 contains a model of card, card deck, and player hand. After each step, your agent will get an
 observation as an instance of BlackjackObservation class and a reward. In a terminal state,
@@ -76,7 +76,8 @@ plexity of the state space. The agents were trained for 50 000- 100 000 epochs.
  | Dealer | -0.083  | 
  | TDAgent | -0.079   | 
  | SARSA | -0.085   | 
-  For the 100K epochs shown in previous table, evaluation take around two min
+
+For the 100K epochs shown in previous table, evaluation take around two min
 utes for both agents.
 
  I expected that the average result of Dealer, TD agent and SARSA will be
